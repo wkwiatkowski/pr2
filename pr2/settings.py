@@ -25,7 +25,7 @@ SECRET_KEY = '9ysih+7ex522f47y)3b!6t1o7p=y+zp2&_*6sy*py^y&e1d*dn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-TEMPLATE_DEBUG = TRUE
+#TEMPLATE_DEBUG = TRUE
 
 # W produkcyjnej wersji django bedzie udostepniany przez np. apache lub ngix
 # na potrzeby wersji rozwojowej, nie bedziemy z nich korzystac
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'shelf',
 ]
 
 MIDDLEWARE = [
