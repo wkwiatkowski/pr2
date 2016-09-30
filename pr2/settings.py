@@ -29,8 +29,7 @@ DEBUG = True
 
 # W produkcyjnej wersji django bedzie udostepniany przez np. apache lub ngix
 # na potrzeby wersji rozwojowej, nie bedziemy z nich korzystac
-ALLOWED_HOSTS = [] # 127.0.0.1
-
+ALLOWED_HOSTS = [] # 
 
 # Application definition
 
@@ -59,7 +58,7 @@ ROOT_URLCONF = 'pr2.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [ 'templates' ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -72,6 +71,9 @@ TEMPLATES = [
     },
 ]
 
+#TEMPLATE_DIRS = (
+#        os.path.join(BASE_DIR, 'templates' ),
+#        )
 WSGI_APPLICATION = 'pr2.wsgi.application'
 
 
